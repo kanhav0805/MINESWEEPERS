@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".GameLost">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="408dp"
+        android:layout_height="474dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gamelostimage" />
+
+    <Button
+        android:id="@+id/tryagain"
+        android:layout_width="373dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/try_again"
+        android:textSize="34sp"
+        app:backgroundTint="#1BB815"
+        app:layout_constraintEnd_toEndOf="@+id/losttext"
+        app:layout_constraintStart_toStartOf="@+id/losttext"
+        app:layout_constraintTop_toBottomOf="@+id/losttext" />
+
+    <TextView
+        android:id="@+id/losttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/oops_you_lost"
+        android:textColor="#F6F0F0"
+        android:textSize="44sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

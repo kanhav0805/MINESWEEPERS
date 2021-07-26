@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MINESWEEPERS</string>
+    <string name="game_rules">GAME RULES</string>
+    <string name="minesweeper">MINESWEEPER</string>
+    <string name="or">OR</string>
+    <string name="enter_the_dimensions">ENTER THE DIMENSIONS</string>
+    <string name="enter_height">ENTER HEIGHT</string>
+    <string name="enter_width">ENTER WIDTH</string>
+    <string name="eneter_mine_no">ENTER MINE NO</string>
+    <string name="mine_count">MINE COUNT</string>
+    <string name="timer">TIMER</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="oops_you_lost">OOPS!! YOU LOST</string>
+    <string name="congratulations_you_won">Congratulations!! You Won</string>
+    <string name="saved_high_score_key" />
+    <string name="last_time" />
+    <string name="choose_difficulty">CHOOSE DIFFICULTY</string>
+    <string name="easy">EASY</string>
+    <string name="medium">MEDIUM</string>
+    <string name="hard">HARD</string>
+    <string name="start">START</string>
+    <string name="make_custom_board">MAKE CUSTOM BOARD</string>
+    <string name="title_activity_set_mine_color">SetMineColor</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+</resources>

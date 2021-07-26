@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/mainheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/minesweeper"
+        android:textColor="#0C0C0C"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/best_timetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/mainheader"
+        app:layout_constraintStart_toStartOf="@+id/mainheader"
+        app:layout_constraintTop_toBottomOf="@+id/mainheader" />
+
+    <TextView
+        android:id="@+id/last_timetext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/mainheader"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/mainheader"
+        app:layout_constraintTop_toBottomOf="@+id/best_timetext" />
+
+    <RadioGroup
+        android:id="@+id/difficultytype"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@+id/difficultychoose"
+        app:layout_constraintStart_toStartOf="@+id/difficultychoose"
+        app:layout_constraintTop_toBottomOf="@+id/difficultychoose">
+
+        <RadioButton
+            android:id="@+id/easy_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:buttonTint="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/medium_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/medium"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:buttonTint="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/hard_radiobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hard"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:buttonTint="@color/black"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/difficultychoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/choose_difficulty"
+        android:textColor="#151515"
+        android:textSize="34sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/mainheader"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/mainheader"
+        app:layout_constraintTop_toBottomOf="@+id/last_timetext" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="OR"
+        android:textColor="#1C1818"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/startbtns"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="@+id/startbtns"
+        app:layout_constraintTop_toBottomOf="@+id/startbtns" />
+
+    <Button
+        android:id="@+id/startbtns"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/start"
+        android:textSize="34sp"
+        app:backgroundTint="#100F0F"
+        app:layout_constraintEnd_toEndOf="@+id/difficultytype"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/difficultytype"
+        app:layout_constraintTop_toBottomOf="@+id/difficultytype" />
+
+    <Button
+        android:id="@+id/customboardbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/make_custom_board"
+        android:textSize="34sp"
+        app:backgroundTint="#171515"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/startbtns"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="@+id/startbtns"
+        app:layout_constraintTop_toBottomOf="@+id/or"
+        app:layout_constraintVertical_bias="0.364" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomBoardActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/enterdimensiontext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/enter_the_dimensions"
+        android:textColor="#0B0909"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/heightedit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_the_editetext_border"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="10dp"
+        android:hint="@string/enter_height"
+        app:layout_constraintEnd_toEndOf="@+id/enterdimensiontext"
+        app:layout_constraintStart_toStartOf="@+id/enterdimensiontext"
+        app:layout_constraintTop_toBottomOf="@+id/enterdimensiontext" />
+
+    <EditText
+        android:id="@+id/widthedit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_the_editetext_border"
+        android:ems="10"
+        android:hint="@string/enter_width"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/enterdimensiontext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/enterdimensiontext"
+        app:layout_constraintTop_toBottomOf="@+id/heightedit" />
+
+    <EditText
+        android:id="@+id/minesnoedit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_the_editetext_border"
+        android:ems="10"
+        android:hint="ENTER MINES NO"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/widthedit"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/widthedit"
+        app:layout_constraintTop_toBottomOf="@+id/widthedit" />
+
+    <Button
+        android:id="@+id/submitsbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="SUBMIT"
+        android:textSize="28sp"
+        app:backgroundTint="#1B1717"
+        app:layout_constraintEnd_toEndOf="@+id/minesnoedit"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/minesnoedit"
+        app:layout_constraintTop_toBottomOf="@+id/minesnoedit" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="334dp"
+        android:layout_height="293dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submitsbtn"
+        app:layout_constraintVertical_bias="0.437"
+        app:srcCompat="@drawable/remote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
